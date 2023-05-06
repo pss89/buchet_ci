@@ -197,7 +197,7 @@
 <body>
 
 <div id="app"></div>
-<script src="dist/main.js" charset="utf-8"></script>
+<script src="dist/app.js" charset="utf-8"></script>
 
 <!-- HEADER: MENU + HEROE SECTION -->
 <header>
