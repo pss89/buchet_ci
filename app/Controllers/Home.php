@@ -8,4 +8,9 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function new_index()
+    {
+        return view('/pages/home');
+    }
 }

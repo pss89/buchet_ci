@@ -29,9 +29,9 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('pages','Pages::index');
-$routes->get('(:segment)','Pages::view/$1');
+// $routes->get('/', 'Home::index');
+// $routes->get('pages','Pages::index');
+// $routes->get('(:segment)','Pages::view/$1');
 
 /*
  * --------------------------------------------------------------------
@@ -46,6 +46,7 @@ $routes->get('(:segment)','Pages::view/$1');
  * You will have access to the $routes object within that file without
  * needing to reload it.
  */
+echo ENVIRONMENT;
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
