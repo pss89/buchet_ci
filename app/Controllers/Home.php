@@ -13,12 +13,17 @@ class Home extends BaseController
 
     public function new_index()
     {
-        $test = new Test();
-        $data = $test->findAll();
-        $joinData = $test->getJoinData();
+        // $db = \Config\Database::connect();
+        // echo "<pre>";
+        // print_r($db);
+        // exit;
 
-        echo "<pre>";
-        print_r($joinData);
+        // $test = new Test();
+        // $data = $test->findAll();
+        // $joinData = $test->getJoinData();
+
+        // echo "<pre>";
+        // print_r($joinData);
 
         return view('/pages/home');
     }
