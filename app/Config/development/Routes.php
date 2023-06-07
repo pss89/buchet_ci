@@ -32,4 +32,12 @@ $routes->set404Override();
 // $routes->get('/', 'Home::index');
 // $routes->get('pages','Pages::index');
 // $routes->get('(:segment)','Pages::view/$1');
-$routes->get('/', 'Home::new_index');
+// $routes->get('/', 'Home::new_index');
+
+$routes->get('/', 'Common::index');
+$routes->get('/user', 'User::index');
+$routes->get('/user/join', 'User::join');
+// $routes->group('users', static function ($routes) {
+//     $routes->get('users', 'Admin\Users::index');
+//     $routes->get('blog', 'Admin\Blog::index');
+// });

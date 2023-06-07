@@ -5,8 +5,8 @@ module.exports = {
     mode:'development',
     // entry: './components/app.js',
     entry:{
-        app: path.join(__dirname, 'components','app','app.js'),
-        new2: path.join(__dirname,'components','new','new2.js'),
+        header: path.join(__dirname, 'components','common','header.js'),
+        footer: path.join(__dirname,'components','common','footer.js'),
     },
     output:{
         path: path.resolve(__dirname, './public/dist'),
